@@ -1,0 +1,111 @@
+* {
+    /* border: red 1px solid; */
+}
+
+.intro {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: end;
+    gap: 9vw;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.intro_img {
+    top: 70%;
+    left: 20%;
+  transform: translate(-50%, -50%);
+    height: 80vh;
+    position: absolute;
+} 
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro_title {
+    /* text-align: center; */
+    font-size: 150px;
+    font-weight: 800;
+}
+
+.intro_cover {
+    width: 30vw;
+    gap: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro_block_title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+
+.intro_block {
+    line-height: 20px;
+}
+
+/* --- MILK BOTTLES --- */
+
+.bottle_cover {
+    display: flex;
+    gap: 10vw;
+}
+
+.bottle_img {
+    width: 30vw;
+    padding: 5vh 2vw;
+    border-radius: 10px;
+}
+
+.img1 {
+    background-color: rgba(249, 235, 204, 0.557);
+}
+
+.img2 {
+    background-color: rgba(231, 209, 160, 0.557);
+}
+
+.img3 {
+    background-color: rgba(243, 206, 172, 0.644);
+}
+
+.bottle_title {
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+.bottle_cost {
+    font-size: 20px;
+    opacity: 0.5;
+    margin-bottom: 5vh;
+}
+
+.descr_cover {
+    padding: 10px 20px;
+    background-color: rgba(249, 235, 204, 0.212);
+    margin: 2vh 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    /* border-radius: 10px; */
+}
+
+.additional {
+    margin-top: 5vh;
+    opacity: 0.6;
+}
+
+.descr {
+    font-weight: 600;
+}
+
+.soft {
+    font-weight: 400 !important;
+    opacity: 0.6;
+}

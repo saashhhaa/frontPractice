@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 :root {
     --text-color: #6a4043;
     --background-color: rgb(225, 205, 163);
@@ -72,6 +77,20 @@ nav {
     top: 0;
     padding: 5vh 10vw;
     z-index: 10;
+}
+
+.hero_button {
+    padding: 10px 20px;
+    border: 1.5px solid var(--text-color);
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    margin-top: 5vh;
+}
+
+.hero_button:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
 }
 
 .nav_link {
@@ -148,6 +167,8 @@ nav {
     width: 60%;
     line-height: 23px;
     margin-left: 35vw;
+    border: 1px solid rgba(255, 255, 255, 0.502);    
+
     
 }
 
@@ -185,7 +206,7 @@ width: 60%;
 }
 
 .milk_img {
-  height: 80vh;
+  height: 75vh;
   width: auto;
    top: 50%;
   left: 50%;
@@ -209,7 +230,8 @@ width: 60%;
 }
 
 .milk_descr {
-    font-size: 20px;
+    text-align: center;
+    font-size: 26px;
     font-weight: 600;
     cursor: pointer;
 }
@@ -220,34 +242,26 @@ width: 60%;
 
 .descr1 {
     bottom: 90vh;
-    left: 10vw;
-}
-
-.descr1:hover, .descr2:hover {
-    transform: translateX(-10px);
-}
-
-.descr4:hover, .descr3:hover {
-    transform: translateX(10px);
+    left: 20vw;
 }
 
 .descr2 {
-    bottom: 50vh;
-    left: 10vw;
+    bottom: 45vh;
+    left: 15vw;
 }
 
 .descr3 {
-    bottom: 90vh;
-    right: 10vw;
+    bottom: 85vh;
+    right: 15vw;
 }
 
 .descr4 {
-    bottom: 50vh;
-    right: 5vw;
+    bottom: 45vh;
+    right: 15vw;
 }
 
 .descr5 {
-    bottom: 115vh;
+    bottom: 105vh;
     left: 46vw;
 }
 
@@ -263,7 +277,7 @@ width: 60%;
 }
 
 .arrow3 {
-    bottom: 100vh;
+    bottom: 93vh;
     left: 50vw;
 }
 
@@ -276,7 +290,7 @@ width: 60%;
 .arrow5 {
     transform: rotate(90deg);
      bottom: 45vh;
-    right: 25vw;
+    right: 30vw;
 }
 
 /* --- CONTACT US --- */
