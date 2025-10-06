@@ -18,7 +18,6 @@ html {
     color: var(--text-color);
     margin: 0;
     font-weight: 500;
-    /* border: 1px red solid; */
     transition: 0.2s ease;
 }
 
@@ -100,13 +99,11 @@ nav {
 }
 
 .nav_link:hover {
-    /* border-bottom-color: var(--text-color); */
     transform: translateY(-5px);
 }
 
 .logo {
     font-size: 20px;
-    /* font-family: 'Bad Script'; */
     line-height: 23px;
     text-transform: uppercase;
 }
@@ -137,7 +134,7 @@ nav {
     margin-bottom: 3vh;
 }
 
-.block {
+.hero_block {
     width: 40%;
 }
 
@@ -153,7 +150,6 @@ nav {
 /* ---- HISTORY ----  */
 
 .history {
-    /* height: 120vh; */
     position: relative;
     display: flex;
     align-items: center;
@@ -193,7 +189,6 @@ width: 60%;
 /* --- MILK --- */
 
 .milk {
-    /* height: 130vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,7 +215,6 @@ width: 60%;
 }
 
 .milk_image_cover:hover .original {
-  /* filter: blur(5px); */
   filter: brightness(0.9);
 }
 

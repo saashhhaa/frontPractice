@@ -1,23 +1,22 @@
-* {
-    /* border: red 1px solid; */
-}
-
 .intro {
     background-color: var(--background-color);
     display: flex;
     justify-content: end;
     gap: 9vw;
     align-items: center;
-    /* overflow: hidden; */
 }
 
 .intro_img {
     top: 70%;
     left: 20%;
-  transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     height: 80vh;
     position: absolute;
 } 
+
+li:hover {
+    padding-left: 10px;
+}
 
 section {
     display: flex;
@@ -26,7 +25,6 @@ section {
 }
 
 .intro_title {
-    /* text-align: center; */
     font-size: 150px;
     font-weight: 800;
 }
@@ -93,7 +91,6 @@ section {
     display: flex;
     justify-content: space-between;
     width: 30vw;
-    /* border-radius: 10px; */
 }
 
 .additional {

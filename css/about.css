@@ -3,18 +3,7 @@ nav a, .logo{
 }
 nav {
     background-color: var(--text-color);
-    padding: 5vh 10vw 5vh 5vw;
     width: 100vw;
-
-}
-
-.logo_icon {
-    visibility: hidden;
-}
-
-.logo_iconWhite {
-    visibility: visible;
-     width: 3vw;
 }
 
 /* --- ABOUT COMPANY ---  */
@@ -22,12 +11,12 @@ nav {
 .aboutCompany {
     padding-top: 35vh;
     height: max-content;
-    /* background-color: var(--background-color); */
 }
 
 .aboutCompany_cover {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5vw;
     margin-bottom: 5vh;
     padding: 5vh 0vw;
 }
@@ -87,7 +76,6 @@ strong {
     font-weight: 700;
 }
 
-
 /* --- VALUES --- */
 
  .values_title  {
@@ -105,7 +93,6 @@ strong {
     display: flex;
     width: 100%;
     gap: 2vw;
-    /* margin-top: 15vh; */
 }
 
 .values_block {
