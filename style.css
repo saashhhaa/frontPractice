@@ -1,7 +1,38 @@
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+:root {
+    --text-color: #6a4043;
+    --background-color: rgb(225, 205, 163);
+}
+
+* {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat';
+    color: var(--text-color);
+    margin: 0;
+    font-weight: 500;
+    /* border: 1px red solid; */
+    transition: 0.2s ease;
+}
+
+body::-webkit-scrollbar {
+    background-color: var(--text-color);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
 }
 
 body {
@@ -10,24 +41,335 @@ body {
     align-items: center;
     width: 100%;
     justify-content: center;
-    font-size: 24px;
-    overflow: hidden;
-    padding: 2vh 10vw;
+    font-size: 14px;
+    overflow-x: hidden;
    
 }
 
-nav {
-    display: flex;
-     gap: 3vw;
+section {
+    padding: 2vh 10vw;
+    height: 100vh;
+    width: 100vw;
 }
 
-.content_convert{
+.gap {
+    height: 40vh;
+}
+
+.cover{
     display: flex;
     gap: 3vw;
 }
 
-img {
-    height: 20vh;
-    width: 100%;
+/* ---- NAV ---- */
 
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    padding: 5vh 10vw;
+    z-index: 10;
+}
+
+.nav_link {
+    border-bottom: transparent 1px solid;
+    padding-bottom: 5px;
+    transition: all 0.2s ease; 
+}
+
+.nav_link:hover {
+    /* border-bottom-color: var(--text-color); */
+    transform: translateY(-5px);
+}
+
+.logo {
+    font-size: 20px;
+    /* font-family: 'Bad Script'; */
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.logo_cover {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo_icon {
+    width: 3vw;
+}
+
+/* ---- HERO ---- */
+
+.hero{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.hero_title {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 3vh;
+}
+
+.block {
+    width: 40%;
+}
+
+.hero_img {
+    height: auto;
+    width: 65vw;
+    aspect-ratio: 11/8;
+    position: absolute;
+    right: 0vw;
+    bottom: 0;
+}
+
+/* ---- HISTORY ----  */
+
+.history {
+    /* height: 120vh; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.history_block {
+    background-color: rgba(245, 221, 171, 0.462);
+    backdrop-filter: blur(30px);   
+    border-radius: 10px;
+    padding: 8vh 5vw;
+    width: 60%;
+    line-height: 23px;
+    margin-left: 35vw;
+    
+}
+
+.history_title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 4vh;
+}
+
+.history_img {
+    position: absolute;
+    width: 70%;
+    height: auto;
+}
+
+.back {
+width: 60%;
+ left: 0;
+ bottom: 15vh;
+}
+
+/* --- MILK --- */
+
+.milk {
+    /* height: 130vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.milk_image_cover {
+  position: relative;
+  width: max-content;
+}
+
+.milk_img {
+  height: 80vh;
+  width: auto;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transition: 0.2s;
+}
+
+.milk_img.hover {
+  opacity: 0;
+}
+
+.milk_image_cover:hover .original {
+  /* filter: blur(5px); */
+  filter: brightness(0.9);
+}
+
+.milk_image_cover:hover .hover {
+  opacity: 1;
+  filter: brightness(10);
+}
+
+.milk_descr {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.milk_descr, .milk_arrow {
+    position: absolute;
+}
+
+.descr1 {
+    bottom: 90vh;
+    left: 10vw;
+}
+
+.descr1:hover, .descr2:hover {
+    transform: translateX(-10px);
+}
+
+.descr4:hover, .descr3:hover {
+    transform: translateX(10px);
+}
+
+.descr2 {
+    bottom: 50vh;
+    left: 10vw;
+}
+
+.descr3 {
+    bottom: 90vh;
+    right: 10vw;
+}
+
+.descr4 {
+    bottom: 50vh;
+    right: 5vw;
+}
+
+.descr5 {
+    bottom: 115vh;
+    left: 46vw;
+}
+
+.arrow1 {
+    transform: rotate(-90deg);
+     bottom: 45vh;
+    left: 30vw;
+}
+
+.arrow2 {
+    bottom: 80vh;
+    left: 30vw;
+}
+
+.arrow3 {
+    bottom: 100vh;
+    left: 50vw;
+}
+
+.arrow4 {
+    transform: scaleX(-1);
+    bottom: 80vh;
+    right: 25vw;
+}
+
+.arrow5 {
+    transform: rotate(90deg);
+     bottom: 45vh;
+    right: 25vw;
+}
+
+/* --- CONTACT US --- */
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    align-items: center;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 35vw;
+    background-color: white;
+    padding: 5vh 2vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px #6a404339;
+}
+
+.contact_cover {
+    margin-top: -50vh;
+}
+
+.contact_title {
+    font-weight: 700;
+    font-size: 32px;
+    width: 30vw;
+    margin-bottom: 2vh;
+}
+
+.contact_descr{
+    font-size: 18px;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 18px;
+    color:#6a404383;
+}
+
+textarea {
+    height: 20vh;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.form_element {
+    background-color: rgb(247, 243, 235);
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 2vh 2vw;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+}
+
+.contact_button {
+    background-color: var(--text-color);
+    color: white;
+}
+
+.call_img {
+    position: absolute;
+    bottom: 0;
+    left: 5vw;
+    width: 35vw;
+    height: auto;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 5vw;
+    font-size: 18px;
+    width: 100%;
+}
+
+.media_cover {
+    display: flex;
+    gap: 10px;
+    color: white;
+    align-items: center;
+}
+
+.media {
+    width: 30px;
+    height: auto;
 }

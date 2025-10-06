@@ -1,16 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontenddd</title>
+    <title>Счастливая Бурена</title>
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
+
+    <!-- NAVIGATION -->
+
     <nav>
-        <a href="/tech.html" class="nav_link">TECH</a>
-        <a href="/about.html" class="nav_link">About us</a>
-        <a href="/parnters.html" class="nav_link">Partners</a>
+        <a href="/index.html" class="logo_cover">
+            <img src="/images/logo.PNG" alt="" class="logo_icon">
+            <p class="logo">Счастливая<br>бурена</p>
+        </a>
+        <div class="cover">
+            <a href="/about.html" class="nav_link">о компании</a>
+            <a href="/product.html" class="nav_link">наши продукты</a>
+            <a href="#contact" class="nav_link">написать нам</a>
+        </div>
     </nav>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+        <div class="block">
+            <p class="hero_title">Уникальный вкус</p>
+            <p class="hero_descr">натуральных молочных продуктов от лучших ферм
+                Челябинской области - попробуйте и убедитесь сами! Высокой качество и натуральность продукции
+                - забота о здоровье и благополучии вашей семьи.</p>
+        </div>
+        <img src="/images/cow.PNG" alt="" class="hero_img">
+    </section>
+
+    <div class="gap"></div>
+
+
+    <!-- HISTORY SECTION -->
+
+    <section class="history">
+        <!-- <img src="/village.PNG" alt="" class="history_img back1"> -->
+        <img src="/images/cans.PNG" alt="" class="history_img back">
+        <div class="history_block">
+            <div class="history_title">Наша история</div>
+            <div class="cover">
+                <p class="history_descr">История села начинается с подворья, основанного еще в 19 веке известными
+                    купцами
+                    Яушевыми. По сохранившимся
+                    данным, сельскохозяйственное
+                    подворые занималось
+                    животноводством, включая
+                    коневодство.</p>
+                <p class="history_descr">В советское время земли специализировались
+                    на выращивании зерновых культур, производстве молока и маса.
+                    Долгие годы молоко из села
+                    Подовинное поставлялось сразу на насколько молокозаводов Челябинской области.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="gap"></div>
+
+    <!-- MILK  -->
+
+    <section class="milk">
+        <div class="milk_image_cover">
+            <img src="/images/milk.PNG" alt="" class="milk_img original">
+
+            <img src="/images/milk_text.PNG" alt="Текст" class="milk_img hover">
+        </div>
+
+        <p class="milk_descr descr1">Крепкие кости</p>
+        <p class="milk_descr descr2">Источник витамина В</p>
+        <p class="milk_descr descr3">Углеводы = энергия</p>
+        <p class="milk_descr descr4">Источник витамина D</p>
+        <p class="milk_descr descr5">Профилактика рака</p>
+
+        <img src="/images/arrowUp.PNG" alt="" class="milk_arrow arrow1">
+        <img src="/images/arrowLeft.PNG" alt="" class="milk_arrow arrow2">
+        <img src="/images/arrowUp.PNG" alt="" class="milk_arrow arrow3">
+        <img src="/images/arrowLeft.PNG" alt="" class="milk_arrow arrow4">
+        <img src="/images/arrowUp.PNG" alt="" class="milk_arrow arrow5">
+
+    </section>
+
+    <div class="gap"></div>
+
+
+    <!-- CONTACT US SECTION-->
+    <section class="contact" id="contact">
+        <div class="contact_cover">
+            <p class="contact_title">Пишите по любому-у-у вопросу!</p>
+            <p class="contact_descr">Мы обязательно вернемся к вам с ответом.</p>
+        </div>
+        <form action="">
+            <label for="name">Имя</label>
+            <input type="text" name="name" placeholder="Бурена Буренкова" required class="form_element">
+            <label for="name">Почта</label>
+            <input type="email" name="email" placeholder="example@gmail.com" required class="form_element">
+            <label for="name">Ваше сообщение</label>
+            <textarea name="message" placeholder="Му-у-у." required class="form_element"></textarea>
+            <button type="submit" class="contact_button form_element">Отправить</button>
+        </form>
+        <img src="/images/call.PNG" alt="" class="call_img">
+
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="media_cover">
+            <img src="/images/instagram-svgrepo-com.svg" alt="" class="media">
+            <p class="media_descr">happy_burena</p>
+        </div>
+        <div class="media_cover">
+            <img src="/images/twitter-boxed-svgrepo-com.svg" alt="" class="media">
+            <p class="media_descr">happyH_bbBurena</p>
+        </div>
+        <div class="media_cover">
+            <img src="/images/phone-svgrepo-com (1).svg" alt="" class="media">
+            <p class="media_descr">+7800667887</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
