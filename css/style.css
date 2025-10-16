@@ -58,7 +58,7 @@ section {
 
 .cover {
   display: flex;
-  gap: 3vw;
+  gap: 2vw;
 }
 
 /* ---- NAV ---- */
@@ -72,6 +72,13 @@ nav {
   top: 0;
   padding: 5vh 10vw;
   z-index: 10;
+}
+
+.cover_left {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  justify-content: center;
 }
 
 .hero_button {
